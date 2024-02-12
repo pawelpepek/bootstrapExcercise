@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Company</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" />
+    <link href="/style.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/d1f493f77a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main class="container-fluid p-0 m-0">
+
+        <nav id="navbar"
+            class="navbar bg-body-tertiary mb-3 fixed-top p-0 m-0 border-bottom border-dark bg-white navbar-expand-lg d-flex flex-column ">
+            <div class="w-100 nav-img container-fluid p-0">
+                <div class="shade w-100 h-100"></div>
+                <button class="position-fixed navbar-toggler navbar-dark bg-dark" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav justify-content-center w-100  navbar-nav-scroll my-2">
+                    <li class="nav-item mx-3">
+                        <a class="h4" href="#about">O Firmie</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="h4" href="#price">Cennik</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="h4" href="#contact">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%"
+            data-bs-smooth-scroll="true" class="content">
+            <section class="container" id="about">
+                <div class="row mt-4 mb-1">
+                    <div class="col-lg-4 coll-12">
+                        <h2 class="ms-5 h1 text-uppercase">o firmie</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 coll-12">
+                        <div class="w-100 img-company bg-dark about">
+                            <img src="./img/about.jpg" alt="pieczone warzywa" width="600" height="500" />
+                        </div>
+                    </div>
+                    <div class="col-lg-8 coll-12">
+                        <div class="d-flex flex-column">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                                auctor libero at sem maximus, a tempus sapien sollicitudin.
+                                Aenean at neque ligula. Morbi suscipit enim felis, sit amet
+                                facilisis nunc blandit et. Vivamus sed tincidunt sapien, et
+                                cursus justo. Kontakt
+                            </p>
+                            <div class="d-flex flex-row justify-content-between align-content-center contact-place">
+                                <p class="me-3">
+                                    Curabitur tincidunt vel quam in placerat. Integer vel viverra
+                                    orci, et pellentesque sapien.
+                                </p>
+                                <button class="btn btn-outline-secondary me-2  btn-contact"><a
+                                        class="text-decoration-none text-dark" href="#contact">Kontakt</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-5">
+                    <div id="carouselExample" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/img/mountains1.jpg" class="d-block w-100 first-img" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/img/mountains2.jpg" class="d-block w-100 second-img" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/img/mountains3.jpg" class="d-block w-100 third-img" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bg-secondary-subtle py-2 w-100" id="price">
+                <div class="container">
+                    <div class="row mt-4 mb-1">
+                        <div class="col-lg-4 coll-12">
+                            <h2 class="ms-5 h1 text-uppercase mb-5">cennik</h2>
+                        </div>
+                    </div>
+                    <div class="row row-cols-1 row-cols-lg-3 g-3 px-4 cards pb-4">
+                        <div class="col">
+                            <div class="card h-100 border-dark mx-4 prices">
+                                <div class="card-body d-flex flex-column align-items-center">
+                                    <h5 class="card-title text-uppercase align-items-center text-center my-3">usługa 1
+                                    </h5>
+                                    <p class="card-text text-center m-2">Lorem ipsum dolor.</p>
+                                    <hr class="w-100 border-secondary" />
+
+                                    <p class="card-text text-center m-2">Lorem ipsum dolor sit amet.</p>
+                                    <i class="bi bi-box-seam display-5"></i>
+
+                                    <buuton class="btn btn-secondary border border-dark border-2 px-4 mt-2">Wybieram
+                                    </buuton>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 border-dark mx-4 prices">
+                                <div class="card-body d-flex flex-column align-items-center">
+                                    <h5 class="card-title text-uppercase align-items-center text-center my-3">usługa 1
+                                    </h5>
+                                    <p class="card-text text-center m-2">Lorem ipsum dolor.</p>
+                                    <hr class="w-100 border-secondary" />
+
+                                    <p class="card-text text-center m-2">Lorem ipsum dolor sit amet.</p>
+                                    <i class="bi bi-suitcase-lg display-5"></i>
+
+                                    <buuton class="btn btn-primary border border-dark border-2 px-4 mt-2">Wybieram
+                                    </buuton>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 border-dark mx-4 prices">
+                                <div class="card-body d-flex flex-column align-items-center">
+                                    <h5 class="card-title text-uppercase align-items-center text-center my-3">usługa 1
+                                    </h5>
+                                    <p class="card-text text-center m-2">Lorem ipsum dolor.</p>
+                                    <hr class="w-100 border-secondary" />
+
+                                    <p class="card-text text-center m-2">Lorem ipsum dolor sit amet.</p>
+                                    <i class="bi bi-signpost-2 display-5"></i>
+
+                                    <buuton class="btn btn-secondary border border-dark border-2 px-4 mt-2">
+                                        Wybieram</buuton>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="mb-4 container" id="contact">
+                <div class="row mt-4 mb-1">
+                    <div class="col-lg-4 coll-12">
+                        <h2 class="ms-5 h1 text-uppercase">kontakt</h2>
+                    </div>
+                </div>
+                <div class="row mx-4 mx-lg-0">
+                    <div class="col-lg-4 coll-12 mb-3 mb-lg-0">
+                        <div class="card h-100 p-4 border-dark">
+                            <h3 class="card-title text-uppercase mb-4">Adres</h3>
+                            <p class="py-0 mb-0">ul. Zielona 3</p>
+                            <p class="py-0 my-0">Katowice</p>
+                            <p class="py-0">40-400</p>
+
+                            <p class="my-0">500 500 700</p>
+                            <p class="my-0">kontakt@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 coll-12">
+                        <div class="card h-100 p-4 border-dark">
+                            <form class="d-flex flex-column">
+                                <div class="mb-3 d-flex w-100">
+                                    <div class="w-100 me-1">
+                                        <label for="firstName" class="form-label">Imię</label>
+                                        <input type="text" class="form-control" id="firstName">
+                                    </div>
+                                    <div class="w-100 ms-1">
+                                        <label for="lastName" class="form-label">Nazwisko</label>
+                                        <input type="text" class="form-control" id="lastName">
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Wybierz temat</label>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected></option>
+                                        <option value="1">Zakup</option>
+                                        <option value="2">Reklamacja</option>
+                                        <option value="3">Współpraca</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Treść wiadomości</label>
+                                    <textarea class="form-control" id="message" rows="3"></textarea>
+                                </div>
+                                <button
+                                    class="btn btn-primary border border-dark border-2 px-4 mt-2 btn-submit">Wyślij</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-body-tertiary py-2 border-top ">
+        <p class="mb-0 w-100 text-center">&copy; 2024 | EloElo</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="./scripts.js"></script>
+</body>
+
+</html>

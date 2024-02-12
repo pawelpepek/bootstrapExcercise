@@ -1,0 +1,126 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 1.4em;
+}
+
+body {
+	min-height: 100vh;
+	width: 100vw;
+	font-family: "Roboto", "Montserrat", sans-serif;
+	overflow-x: hidden;
+}
+
+.content {
+	margin-top: 200px;
+}
+
+p {
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+.navbar-toggler {
+	right: 20px;
+}
+
+.nav-img {
+	height: 100px;
+	max-height: 100px;
+	background-image: url("./img/nav.jpg");
+	background-size: cover;
+	right: 0px;
+	position: relative;
+}
+.navbar a {
+	text-decoration: none;
+	color: black;
+}
+.shade {
+	background-color: black;
+	opacity: 0.4;
+	transition: opacity 0.3s ease-in-out;
+}
+.shade:hover {
+	opacity: 0;
+}
+
+.img-company {
+	height: 230px;
+	background-color: brown;
+}
+.contact-place {
+	height: 50px;
+}
+
+.about img {
+	max-width: 100%;
+	height: auto;
+}
+
+.carousel-item img {
+	max-height: 400px;
+	object-fit: cover;
+}
+.second-img {
+	top: 1000px;
+}
+
+hr {
+	opacity: 1;
+}
+
+.prices {
+	transition: transform 0.3s ease-in-out;
+}
+
+.prices:hover {
+	transform: scale(1.1);
+}
+
+.prices:hover > .btn-price {
+	background-color: red;
+}
+
+.btn-price {
+	transition: background-color 0.3s ease-in-out;
+}
+
+.navbar a.active {
+	color: blue;
+}
+
+.btn-submit {
+	max-width: 200px;
+	margin-left: calc(50% - 100px);
+	margin-right: calc(50% - 100px);
+}
+.btn-contact > a {
+	transition: color 0.2s ease-in-out;
+}
+
+.btn-contact:hover > a {
+	color: white !important;
+}
+
+.img-company {
+	width: 100%;
+	height: auto;
+	background-size: cover;
+}
+
+@media (max-width: 991px) {
+	.content {
+		margin-top: 130px;
+	}
+	.img-company > img {
+		width: 100%;
+	}
+	.img-company {
+		margin-bottom: 1rem;
+	}
+}
